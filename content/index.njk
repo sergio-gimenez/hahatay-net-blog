@@ -5,24 +5,31 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 3
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hahatay</title>
+</head>
+<body>
 
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
+<a href="https://hahatay.org">Hahatay</a> is a non-profit association for community development, aimed at providing effective responses to forced migrations in Africa that deprive its youth of hope. The organization's objective is to empower and involve young people to become true protagonists in improving their lives, and to be a meeting space that connects individuals committed to integral human development.
 
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+<h2>Purpose</h2>
+
+<p>This repository aims to showcase the implementation details of the network topology. The goal is to show how we deployed the network, which hardware and software technology stack we used and how we manage the network in order to be open and transparent about the work done and inspire more people from the community networks community to embrace self-hosted projects and target other rural areas around the world.</p>
+
+<p>Documentation is focused on 3 main areas: backhaul network architecture, low-cost Mesh Networks deployment, and micro-services deployment.</p>
+
+<h2>Thanks to Contributors</h2>
+
+<p>This is a non-profit project and it's driven mainly by students or volunteers that dedicate their free time on collaborate into tasks of the project.</p>
+
+<p>The project is mainly funded by the CCD at the UPC (Universitat Politècnica de Catalunya)</p>
+
+<p>TODO Collaborating corporate entities donated servers for these services, including Labdoo and Typeform.</p>
+
+</body>
+</html>
