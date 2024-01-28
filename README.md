@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f09d0b65-78c4-460c-82f8-4d5a7f459f35/deploy-status)](https://app.netlify.com/sites/hahatay-network/deploys)
+
 # eleventy-base-blog v8
 
 A starter repository showing how to build a blog with the [Eleventy](https://www.11ty.dev/) site generator (using the [v2.0 release](https://www.11ty.dev/blog/eleventy-v2/)).
