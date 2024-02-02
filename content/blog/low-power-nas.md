@@ -1,9 +1,10 @@
 ---
 title: Build a low power self hosted NAS server & Remote backup system with OpenMediaVault
 description: Build a low power self hosted NAS server & Remote backup system with OpenMediaVault.
-date: 2018-05-01
+date: 2022-01-28
 tags:
   - nas
+  - self-hosted
 ---
 
 Reference video: _How to build a Raspberry Pi NAS_ ([Video](https://www.youtube.com/watch?v=gyMpI8csWis))
